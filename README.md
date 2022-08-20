@@ -16,9 +16,12 @@
     take more than 0.5 sec after the last received quote
     supply your solution to your git repo and send the link to michael@emporus.com
 
-2. wrap you logic with rest API so it will return the current gain which in trader.py
+2. wrap you logic with rest API so it will return the current gain which in trader.py. This api should be called in the middle of your trader execution
 3. create unit tests with mocks to trader.py
-4. create decorator to print the time it took the method above to execute
-5. The most important thing is performance
-6. The symbols for the test will be AMZN, FB
-7. verify your data structures
+4. wrap all current method params with dataclasses with proper validations and add type hints where needed.
+5. create decorator to print the time it took the method above to execute
+6. The most important thing is performance. You can't wait for the model to predict sincetrade execution need to be as close as possible to the latest quote time.
+7. The symbols for the test will be AMZN, FB
+8. verify your data structures(Better to used dataclasses)
+9. Provide your solution to your git repo and send the link to
+10. Provide installation and execution instructions. 
